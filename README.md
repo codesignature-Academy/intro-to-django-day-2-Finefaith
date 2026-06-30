@@ -82,3 +82,23 @@ This repo includes automated checks (`.github/workflows/classroom.yml`) that ver
 - no virtual environment was committed
 
 These checks cover the mechanical parts of the assignment. Your README explanations and homework answers are graded separately by your instructor.
+
+
+## Homework Questions (answers)
+
+1. In your own words, explain the difference between a project and an app.
+
+A project is the entire website. eg Our todo_project classwork given to us is a website,which is made of several moving parts like tasks, authentication, an admin panel. 
+                  while
+An app is a module responsible for one specific feature inside that project. A Tasks app handles tasks. A Users app could handle accounts. A Notifications app could handle alerts. Each app is small, focused, and reusable
+
+
+2. What command creates a new Django app?
+this command: python manage.py startapp tasks
+
+3. Why do we register an app inside `INSTALLED_APPS`?
+In Django, you register an app in INSTALLED_APPS to tell Django that the app is part of your project and should be managed.
+
+
+4. What does giving a URL a `name=` actually let you do later?
+It lets you refer it everywhere else in the project by that name instead of typing the raw path again. If the path ever changes, every reference updates automatically through reverse URL lookup.
